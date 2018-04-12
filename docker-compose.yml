@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  php:
+   build:
+     context: .
+     dockerfile: Dockerfile-php
+   restart: always
+   tty: true
+   network_mode: 'bridge'
+   ports:
+     - ${APACHE_PORT}:80
+   volumes:
+     - .:/var/www/html
+   depends_on:
+     - mariadb
+   links:
+     - mariadb
+
+  mariadb:
+    env_file:
+      - .env
+    image: mariadb:10.0.34
+    restart: always
+    tty: true
+    network_mode: 'bridge'
+    ports:
+      - ${DB_PORT}:3306
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - ./volume/mariadb:/var/lib/mysql
