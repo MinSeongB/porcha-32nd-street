@@ -31,3 +31,13 @@ services:
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
     volumes:
       - ./volume/mariadb:/var/lib/mysql
+
+  node:
+      build:
+        context: ./
+        dockerfile: Dockerfile-node
+      network_mode: 'bridge'
+      restart: always
+      tty: true
+      volumes:
+        - ./:/usr/src/app
