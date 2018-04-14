@@ -1,3 +1,5 @@
+const FilewatcherPlugin = require("filewatcher-webpack-plugin");
+
 let mix = require('laravel-mix');
 
 /*
@@ -12,4 +14,35 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+    .sass('resources/assets/sass/app.scss', 'public/css');
+
+mix.sourceMaps()
+    .version()
+    .browserSync({
+        proxy: 'web',
+        files: [
+            'app/**/*',
+            'public/**/*',
+            'resources/views/**/*',
+            'routes/**/*'
+        ],
+        open: false
+    });
+
+mix.webpackConfig({
+    watchOptions: {
+        aggregateTimeout: 300,
+        poll: 1000
+    },
+    plugins: [
+        new FilewatcherPlugin({
+            watchFileRegex: [
+                'app/**/*',
+                'public/**/*',
+                'resources/views/**/*',
+                'routes/**/*'
+            ],
+            usePolling: true,
+        }),
+    ]
+});

@@ -39,5 +39,9 @@ services:
       network_mode: 'bridge'
       restart: always
       tty: true
+      ports:
+        - ${RELOAD_PORT}:3000
       volumes:
         - ./:/usr/src/app
+      links:
+        - php:web
