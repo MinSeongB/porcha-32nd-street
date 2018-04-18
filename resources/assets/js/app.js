@@ -1,2 +1,3 @@
-import burger from './bulma/navbar';
-burger();
+import Burger from './bulma/navbar';
+
+Burger();

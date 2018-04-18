@@ -22,10 +22,10 @@
                                 <img src="https://bulma.io/images/bulma-logo.png" alt="Logo">
                             </a>
                             <span class="navbar-burger burger" data-target="navbarMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
                         </div>
                         <div id="navbarMenu" class="navbar-menu">
                             <div class="navbar-end">
