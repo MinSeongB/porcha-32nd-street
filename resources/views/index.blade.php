@@ -28,13 +28,11 @@
           </span>
                         </div>
                         <div id="navbarMenu" class="navbar-menu">
-                            <div class="navbar-end"><div class="tabs is-right">
+                            <div class="navbar-end">
+                                <div class="tabs is-right">
                                     <ul>
                                         <li class="is-active"><a>Home</a></li>
-                                        <li><a href="">Examples</a></li>
-                                        <li><a href="">Features</a></li>
-                                        <li><a href="">Team</a></li>
-                                        <li><a href="">Help</a></li>
+                                        <li><a href="">Etc</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -47,22 +45,16 @@
                     <div class="columns is-vcentered">
                         <div class="column is-5">
                             <figure class="image is-4by3">
-                                <img src="https://picsum.photos/800/600/?random" alt="Description">
+                                <img src="/image/main.jpg" alt="Description">
                             </figure>
                         </div>
                         <div class="column is-6 is-offset-1">
                             <h1 class="title is-2">
-                                Superhero Scaffolding
+                                Porchar 32nd Street.
                             </h1>
                             <h2 class="subtitle is-4">
-                                Let this cover page describe a product or service.
+                                Cheers.
                             </h2>
-                            <br>
-                            <p class="has-text-centered">
-                                <a class="button is-medium is-info is-outlined">
-                                    Learn more
-                                </a>
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -72,7 +64,7 @@
                 <div class="container">
                     <div class="tabs is-centered">
                         <ul>
-                            <li><a>And this at the bottom</a></li>
+                            <li><a>TODO Add Footer.</a></li>
                         </ul>
                     </div>
                 </div>
