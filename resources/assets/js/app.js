@@ -1,3 +1,2 @@
-require('bulma');
-
-alert(0);
+import burger from './bulma/navbar';
+burger();
