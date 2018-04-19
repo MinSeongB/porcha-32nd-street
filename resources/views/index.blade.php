@@ -18,7 +18,7 @@
                 <nav class="navbar">
                     <div class="container">
                         <div class="navbar-brand">
-                            <a class="navbar-item" href="../">
+                            <a class="navbar-item" href="/">
                                 <img src="https://bulma.io/images/bulma-logo.png" alt="Logo">
                             </a>
                             <span class="navbar-burger burger" data-target="navbarMenu">
@@ -31,8 +31,11 @@
                             <div class="navbar-end">
                                 <div class="tabs is-right">
                                     <ul>
-                                        <li class="is-active"><a>Home</a></li>
-                                        <li><a href="">Etc</a></li>
+                                        <li><a>브랜드</a></li>
+                                        <li><a>메뉴</a></li>
+                                        <li><a>매장안내</a></li>
+                                        <li><a>가맹안내</a></li>
+                                        <li><a>소식</a></li>
                                     </ul>
                                 </div>
                             </div>
