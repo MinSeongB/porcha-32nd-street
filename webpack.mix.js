@@ -18,7 +18,7 @@ const plugins = [];
 
 const watchFiles = [
     'app/**/*',
-    'resources/views/**/*',
+    'resources/**/*',
     'routes/**/*'
 ];
 
@@ -28,7 +28,7 @@ if (!mix.inProduction()) {
     plugins.push(
         new FilewatcherPlugin({
             watchFileRegex: watchFiles,
-            usePolling: true,
+            usePolling: false,
         })
     );
 
