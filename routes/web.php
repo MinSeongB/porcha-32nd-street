@@ -13,10 +13,12 @@
 
 Route::get('/', 'IndexController@get')->name('index');
 
-Route::prefix('routine')->group(function () {
+
+
+/*Route::prefix('routine')->group(function () {
     Route::auth();
 
     Route::middleware(['auth'])->group(function () {
         Route::get('/', 'HomeController@index')->name('home');
     });
-});
+});*/

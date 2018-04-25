@@ -17,8 +17,8 @@ _ide_helper.php
 /public/vendor
 /public/fonts
 /public/mix-manifest.json
+/public/uploads
 
 ### DOCKER ###
 volume/*/**
 !volume/**/.gitkeep
-
