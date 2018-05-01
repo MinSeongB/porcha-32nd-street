@@ -1,3 +1,4 @@
+@import '~font-awesome/css/font-awesome.min.css';
 @import '~bulma';
 @import "~bulma-carousel";
 @import "~swiper/dist/css/swiper.min.css";
@@ -15,9 +16,29 @@ body {
   box-shadow: none;
 }
 
-.hero.is-info {
+.hero.has-background-main {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/image/main.jpg) no-repeat center center fixed;
   background-size: cover;
+}
+
+@media screen and (min-width: 1088px) {
+  .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link {
+    background: none;
+
+    & strong {
+      color: #ec1d25;
+    }
+  }
+}
+
+.navbar-link {
+  padding: 0 1.5rem;
+}
+
+.navbar-link:after {
+  border: none;
+  margin-top: 0;
+  right: 0;
 }
 
 .logo {

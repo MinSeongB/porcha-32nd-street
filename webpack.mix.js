@@ -14,8 +14,6 @@ const mix = require('laravel-mix');
 mix.js('resources/assets/js/app.js', 'public/js')
     .sass('resources/assets/sass/app.scss', 'public/css');
 
-const plugins = [];
-
 const watchFiles = [
     'app/**/*',
     'resources/**/*',
@@ -23,14 +21,6 @@ const watchFiles = [
 ];
 
 if (!mix.inProduction()) {
-    const FilewatcherPlugin = require("filewatcher-webpack-plugin");
-
-    plugins.push(
-        new FilewatcherPlugin({
-            watchFileRegex: watchFiles,
-            usePolling: false,
-        })
-    );
 
     mix.browserSync({
         proxy: 'web',
@@ -47,7 +37,6 @@ mix.webpackConfig({
         aggregateTimeout: 300,
         poll: 1000
     },
-    plugins: plugins
 });
 
 mix.autoload({
