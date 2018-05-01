@@ -86,7 +86,7 @@
         <!-- End Nav -->
 
         <!-- Start Content -->
-        <section class="hero is-medium has-carousel">
+        <section class="hero is-fullheight has-carousel">
             <div class="hero-carousel carousel-animated carousel-animate-fade" data-autoplay="true">
                 <div class='carousel-container'>
                     <div class='carousel-item has-background is-active'>
@@ -105,16 +105,14 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-body has-text-centered">
-                <div class="columns is-mobile is-centered">
-                    <div class="column is-half is-narrow">
-                        <div class="control">
-                            <h1 class="has-text-white title has-text-centered is-1">포차 32번가</h1>
-                        </div>
-                        <div class="control">
-                            <h2 class="has-text-white subtitle has-text-centered is-2">포차 32번가</h2>
-                        </div>
-                    </div>
+            <div class="hero-body">
+                <div class="container is-fluid has-text-centered">
+                    <h1 class="title has-text-white">
+                        포차 32번가
+                    </h1>
+                    <h2 class="subtitle has-text-white">
+                        술은 취하라고 마시는 겁니다.
+                    </h2>
                 </div>
             </div>
         </section>
